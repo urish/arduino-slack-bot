@@ -22,7 +22,7 @@
 
 #define LEDS_PIN        D2
 #define LEDS_NUMPIXELS  24
-#define WORD_SEPERATORS "., \"'()[]<>;:-+&"
+#define WORD_SEPERATORS "., \"'()[]<>;:-+&?!\n\t"
 
 ESP8266WiFiMulti WiFiMulti;
 WebSocketsClient webSocket;
