@@ -5,7 +5,8 @@ Copyright (C) 2016, Uri Shaked
 License: MIT.
 
 This bot let you control the colors of a NeoPixel Ring through Slack. It uses the Slack Real Time Messaging API to listen for slack messages.
-Read more about it in my blog post.
+
+➜ [Read more about it in my blog post](https://medium.com/@urish/how-to-connect-your-t-shirt-to-slack-using-arduino-90761201d70f)
 
 Before running this Sketch, make sure the set the following constants in the program:
 
