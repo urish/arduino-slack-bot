@@ -172,9 +172,9 @@ void webSocketEvent(WStype_t type, uint8_t *payload, size_t len) {
   Returns true if the connection was established successfully.
 */
 bool connectToSlack() {
-  // Step 1: Find WebSocket address via RTM API (https://api.slack.com/methods/rtm.start)
+  // Step 1: Find WebSocket address via RTM API (https://api.slack.com/methods/rtm.connect)
   HTTPClient http;
-  http.begin("https://slack.com/api/rtm.start?token=" + SLACK_BOT_TOKEN, SLACK_SSL_FINGERPRINT);
+  http.begin("https://slack.com/api/rtm.connect?token=" SLACK_BOT_TOKEN, SLACK_SSL_FINGERPRINT);
   int httpCode = http.GET();
 
   if (httpCode != HTTP_CODE_OK) {
